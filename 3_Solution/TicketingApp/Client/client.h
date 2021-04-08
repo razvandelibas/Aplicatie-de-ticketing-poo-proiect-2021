@@ -1,15 +1,23 @@
 #pragma once
 
-#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QWidget>
 #include "ui_client.h"
 
+namespace Ui
+{
+    class Client;
+}
 class Client : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    Client(QWidget *parent = Q_NULLPTR);
+   explicit Client(QWidget *parent = Q_NULLPTR);
+    ~Client();
+
+private slots:
+    void on_pushButton_login_clicked();
 
 private:
-    Ui::ClientClass ui;
+    Ui::ClientClass *ui;
 };
