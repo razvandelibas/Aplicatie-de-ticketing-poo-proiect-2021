@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QWidget>
 #include "ui_client.h"
+#include"menu.h"
 
 namespace Ui
 {
@@ -17,7 +18,8 @@ public:
 
 private slots:
     void on_pushButton_login_clicked();
-
+  
 private:
     Ui::ClientClass *ui;
+    menu* meniu;
 };

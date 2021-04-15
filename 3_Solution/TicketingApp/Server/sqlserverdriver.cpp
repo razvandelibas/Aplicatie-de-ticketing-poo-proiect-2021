@@ -85,7 +85,7 @@ int main()
 		while (SQLFetch(sqlStmtHandle) == SQL_SUCCESS)
 		{
 			SQLGetData(sqlStmtHandle, 2, SQL_CHAR, queryResult, SQL_RESULT_LEN, &ptrQueryResult);
-			std::cout << "\nQuery Result:\n\n";
+			std::cout << "\n";
 			std::cout << queryResult;
 		}
 	}
